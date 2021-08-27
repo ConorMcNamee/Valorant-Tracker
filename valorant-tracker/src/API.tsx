@@ -5,9 +5,8 @@ const API = () => {
 
     
     const fetchUserData = async () => {
-        const valoratnRes = await fetch("https://ap.api.riotgames.com/val/content/v1/contents?api_key=RGAPI-e056a228-a10e-481c-8338-9469355fc27c")
+        const valoratnRes = await fetch("http://127.0.0.1:5000/acc-data")
         // const AccountData = await accountRes.json()
-
         const valData = await valoratnRes.json()
         console.log(valData)
     }
